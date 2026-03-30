@@ -70,7 +70,6 @@ export default function Home() {
 
   return (
     <main className="relative overflow-hidden bg-animated text-white">
-      {/* Header */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071426]/70 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="/" className="flex items-center gap-4">
@@ -87,23 +86,61 @@ export default function Home() {
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
-            <a
-              href="#services"
-              className="text-sm font-medium text-slate-300 transition hover:text-white"
-            >
-              Services
+            <a href="/" className="text-sm font-medium text-white transition">
+              Home
             </a>
+
+            <div className="group relative flex items-center">
+              <button className="text-sm font-medium text-slate-300 transition hover:text-white">
+                Services
+              </button>
+
+              <div className="invisible absolute left-0 top-full z-50 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                <div className="w-72 rounded-2xl border border-white/10 bg-[#0b1f3a]/95 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+                  <a
+                    href="/ai-automation"
+                    className="block rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  >
+                    <p className="text-sm font-semibold text-white">
+                      AI Automation
+                    </p>
+                    <p className="mt-1 text-xs leading-6 text-slate-300">
+                      Capture leads, log enquiries, and draft replies.
+                    </p>
+                  </a>
+
+                  <a
+                    href="/website-design"
+                    className="mt-1 block rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  >
+                    <p className="text-sm font-semibold text-white">
+                      Website Design &amp; Build
+                    </p>
+                    <p className="mt-1 text-xs leading-6 text-slate-300">
+                      Clean websites built to generate more enquiries.
+                    </p>
+                  </a>
+
+                  <a
+                    href="/complete-enquiry-system"
+                    className="mt-1 block rounded-xl px-4 py-3 transition hover:bg-white/10"
+                  >
+                    <p className="text-sm font-semibold text-white">
+                      Complete Enquiry System
+                    </p>
+                    <p className="mt-1 text-xs leading-6 text-slate-300">
+                      Website + automation combined into one setup.
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <a
               href="#how-it-works"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >
               How It Works
-            </a>
-            <a
-              href="#use-cases"
-              className="text-sm font-medium text-slate-300 transition hover:text-white"
-            >
-              Use Cases
             </a>
             <a
               href="#pricing"
@@ -128,7 +165,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
       <section className="relative px-6 py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
           <div className="fade-up">
@@ -255,7 +291,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Problem */}
       <section className="border-t border-white/10 bg-white/5 px-6 py-20 backdrop-blur">
         <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
@@ -287,7 +322,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview */}
       <section id="services" className="px-6 py-20">
         <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
@@ -329,7 +363,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
       <section
         id="how-it-works"
         className="border-t border-white/10 bg-white/5 px-6 py-20 backdrop-blur"
@@ -367,7 +400,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industries */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
@@ -397,7 +429,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Use cases */}
       <section
         id="use-cases"
         className="border-t border-white/10 bg-white/5 px-6 py-20 backdrop-blur"
@@ -437,7 +468,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Snapshot */}
       <section id="pricing" className="border-t border-white/10 px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 fade-up">
           <div>
@@ -491,7 +521,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact CTA */}
       <section id="contact" className="px-6 py-20">
         <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-white/10 px-8 py-14 text-white shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl md:px-14 fade-up">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
@@ -546,14 +575,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="border-t border-white/10 px-6 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Rudd Ventures. All rights reserved.</p>
-          <p>Websites and smart enquiry systems for service businesses.</p>
-        </div>
-      </footer>
     </main>
   );
 }

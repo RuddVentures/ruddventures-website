@@ -1,47 +1,47 @@
-export default function AIAutomationPage() {
+export default function WebsiteDesignPage() {
   const features = [
-    "Incoming enquiry emails detected automatically",
-    "Lead details logged into a simple tracker",
-    "Professional draft replies created for review",
-    "No auto-send and no loss of control",
-    "Built with rules to avoid false promises or invented pricing",
-    "Tailored to your business and how you already work",
+    "Clean, professional design built for service businesses",
+    "Mobile-friendly layout that works properly on phones",
+    "Clear service sections and strong call-to-actions",
+    "Contact-focused structure to encourage more enquiries",
+    "Simple, modern build without unnecessary clutter",
+    "Designed to support future automation and lead handling",
   ];
 
   const process = [
     {
-      title: "Enquiry comes in",
-      text: "A customer sends an enquiry by email asking about your service, pricing, or availability.",
+      title: "We understand your business",
+      text: "We look at your services, your audience, and what your website actually needs to do for the business.",
     },
     {
-      title: "Lead is captured",
-      text: "The enquiry is logged automatically so nothing gets missed or forgotten.",
+      title: "We design the structure",
+      text: "Your site is planned around clarity, enquiries, and a more professional online presence.",
     },
     {
-      title: "Reply is drafted",
-      text: "A professional reply is generated for your review, helping you respond faster.",
+      title: "We build the website",
+      text: "The site is created to be simple, modern, mobile-friendly, and easy for customers to navigate.",
     },
     {
-      title: "You approve and send",
-      text: "You stay in control by reviewing the draft before anything goes back to the customer.",
+      title: "You launch with confidence",
+      text: "You end up with a cleaner website that helps customers understand your offer and take the next step.",
     },
   ];
 
   const idealFor = [
-    "Trades businesses handling quote requests",
-    "Cleaning companies receiving regular service enquiries",
-    "Barbers and hairdressers answering bookings and pricing questions",
-    "Pet services responding to appointments, sessions, and service questions",
-    "Any local service business that still handles enquiries manually",
+    "Businesses with outdated or weak websites",
+    "Service businesses that rely on enquiries to generate work",
+    "Owners who want a cleaner and more professional online presence",
+    "Businesses that need a better contact flow",
+    "Businesses that want a website built with growth in mind",
   ];
 
   const included = [
-    "Enquiry trigger setup",
-    "Lead logging system setup",
-    "Draft reply workflow setup",
-    "Prompt and business rule setup",
-    "Testing and refinement",
-    "One round of setup adjustments",
+    "Homepage design and build",
+    "Service section structure",
+    "Mobile-friendly layout",
+    "Clear contact section",
+    "Basic call-to-action flow",
+    "One round of revisions",
   ];
 
   return (
@@ -142,18 +142,17 @@ export default function AIAutomationPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
           <div className="fade-up">
             <div className="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm backdrop-blur">
-              AI Enquiry Automation
+              Website Design &amp; Build
             </div>
 
             <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-7xl">
-              Respond Faster Without Handling Every Enquiry Manually
+              Simple Websites Built to Help Service Businesses Win More Enquiries
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-              Rudd Ventures installs a practical enquiry handling system that
-              captures incoming leads, logs them automatically, and drafts
-              professional replies for review so your business can respond
-              faster without losing control.
+              Rudd Ventures builds clean, modern websites for service businesses
+              that want to look more professional, create a stronger first
+              impression, and give customers a clear path to enquire.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -172,16 +171,18 @@ export default function AIAutomationPage() {
             </div>
 
             <div className="mt-7 flex flex-wrap gap-3">
-              {["Human approved", "No auto-send", "No false promises"].map(
-                (item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 shadow-sm backdrop-blur"
-                  >
-                    {item}
-                  </span>
-                )
-              )}
+              {[
+                "Professional design",
+                "Mobile-friendly",
+                "Built for enquiries",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 shadow-sm backdrop-blur"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -191,37 +192,37 @@ export default function AIAutomationPage() {
                 What it solves
               </p>
               <h2 className="mt-2 text-2xl font-semibold text-white">
-                Fewer missed leads. Faster follow-up.
+                Better first impressions. Clearer enquiry flow.
               </h2>
 
               <div className="mt-6 space-y-4">
                 <div className="rounded-2xl border border-white/10 bg-white/90 p-5 text-slate-900">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
-                    Lead captured automatically
+                    A stronger online presence
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    Every enquiry is logged so you have a clearer record of what
-                    is coming in.
+                    A cleaner website helps your business look more trustworthy
+                    and more established.
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-white/90 p-5 text-slate-900">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
-                    Reply drafted for review
+                    Clearer path to enquire
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    A professional draft is created so your team is not starting
-                    from scratch every time.
+                    Your visitors can understand what you do and how to contact
+                    you without unnecessary friction.
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-5 text-slate-900">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
-                    You stay in control
+                    Built for growth
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-700">
-                    Nothing is auto-sent, which means your business stays
-                    protected while still moving faster.
+                    The site can stand alone or work alongside your enquiry
+                    automation system later.
                   </p>
                 </div>
               </div>
@@ -237,7 +238,7 @@ export default function AIAutomationPage() {
               What’s included
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              A practical setup built around how your business already works
+              A practical website built to support real business growth
             </h2>
           </div>
 
@@ -263,7 +264,7 @@ export default function AIAutomationPage() {
               How it works
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              A simple four-step process
+              A simple four-step website process
             </h2>
           </div>
 
@@ -295,7 +296,7 @@ export default function AIAutomationPage() {
               Best fit
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Ideal for businesses that still handle enquiries manually
+              Ideal for businesses that need a stronger online presence
             </h2>
           </div>
 
@@ -322,12 +323,12 @@ export default function AIAutomationPage() {
                 Setup included
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-                Done-for-you setup with practical implementation
+                Simple website delivery without overcomplicating the process
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                This is not generic software you have to work out yourself. The
-                system is set up around your business, your enquiry flow, and
-                the way you already operate.
+                The goal is not to build something bloated. It is to create a
+                clean, practical website that helps your business present itself
+                properly and generate more enquiries.
               </p>
             </div>
 
@@ -351,42 +352,42 @@ export default function AIAutomationPage() {
               Pricing
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Clear starting point for automation setup
+              Clear starting point for website design and build
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Most AI enquiry automation setups start from £250 and typically
-              range up to £500 depending on workflow complexity and how tailored
-              the setup needs to be.
+              Most website projects start from £300 and typically range up to
+              £800 depending on the number of sections, level of content, and
+              how tailored the build needs to be.
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-sm backdrop-blur">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
-              AI Automation
+              Website Design &amp; Build
             </p>
             <p className="mt-3 text-5xl font-semibold tracking-tight text-white">
-              £250–£500
+              £300–£800
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              Final pricing depends on complexity, custom rules, and how your
-              business currently handles enquiries.
+              Final pricing depends on structure, content, and how tailored the
+              site needs to be for your business.
             </p>
 
             <div className="mt-8 space-y-4">
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">Optional support</p>
+                <p className="font-semibold text-white">Clean, practical build</p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Ongoing help available for updates and improvements.
+                  Focused on clarity, professionalism, and generating enquiries.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
                 <p className="font-semibold text-[#0B1F3A]">
-                  No bloated software setup
+                  Easy to combine with automation later
                 </p>
                 <p className="mt-1 text-sm text-slate-700">
-                  Just a practical system built to save time and improve
-                  response speed.
+                  This can stay as a standalone website or become part of a
+                  larger enquiry system later on.
                 </p>
               </div>
             </div>
@@ -402,11 +403,11 @@ export default function AIAutomationPage() {
                 Get started
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Want to improve how your business handles enquiries?
+                Want a stronger website for your business?
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Book a quick conversation and we’ll show you how this can work
-                in your business without overcomplicating things.
+                Book a quick conversation and we’ll show you what a cleaner,
+                more professional website could look like for your business.
               </p>
             </div>
 
@@ -414,17 +415,17 @@ export default function AIAutomationPage() {
               <div className="space-y-4">
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Done-for-you setup
+                    Clean website build
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Built around your workflow
+                    Built for service businesses
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Human approval stays in place
+                    Ready for future growth
                   </p>
                 </div>
               </div>
