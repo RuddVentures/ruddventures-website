@@ -118,6 +118,13 @@ export default function CompleteEnquirySystemPage() {
             </div>
 
             <a
+              href="/faq"
+              className="text-sm font-medium text-slate-300 transition hover:text-white"
+            >
+              FAQ
+            </a>
+
+            <a
               href="#pricing"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >

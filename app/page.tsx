@@ -137,6 +137,13 @@ export default function Home() {
             </div>
 
             <a
+              href="/faq"
+              className="text-sm font-medium text-slate-300 transition hover:text-white"
+            >
+              FAQ
+            </a>
+
+            <a
               href="#how-it-works"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >
@@ -575,6 +582,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/10 px-6 py-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+          <p>© 2026 Rudd Ventures. All rights reserved.</p>
+          <p>Websites and smart enquiry systems for service businesses.</p>
+        </div>
+      </footer>
     </main>
   );
 }
