@@ -1,19 +1,14 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="bg-white text-slate-900">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#" className="flex items-center gap-3">
-            <Image
+          <a href="#" className="flex items-center gap-4">
+            <img
               src="/logo.png"
               alt="Rudd Ventures"
-              width={44}
-              height={44}
-              className="h-11 w-11 object-contain"
-              priority
+              className="h-16 w-16 object-contain"
             />
             <div className="leading-none">
               <span className="block text-lg font-semibold tracking-tight text-slate-900">
@@ -54,7 +49,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="rounded-full bg-[#0B1F3A] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#10284b]"
+            className="rounded-full bg-[#0B1F3A] px-5 py-2.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#10284b]"
           >
             Book a Call
           </a>
@@ -64,13 +59,13 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden px-6 py-20 md:py-28">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/2 top-0 h-[440px] w-[440px] -translate-x-1/2 rounded-full bg-[#0B1F3A]/8 blur-3xl" />
-          <div className="absolute right-[8%] top-[30%] h-[260px] w-[260px] rounded-full bg-[#C8A24D]/10 blur-3xl" />
-          <div className="absolute left-[10%] top-[45%] h-[220px] w-[220px] rounded-full bg-slate-200/50 blur-3xl" />
+          <div className="hero-glow absolute left-1/2 top-0 h-[440px] w-[440px] -translate-x-1/2 rounded-full bg-[#0B1F3A]/8 blur-3xl" />
+          <div className="hero-glow-delayed absolute right-[8%] top-[30%] h-[260px] w-[260px] rounded-full bg-[#C8A24D]/10 blur-3xl" />
+          <div className="hero-glow absolute left-[10%] top-[45%] h-[220px] w-[220px] rounded-full bg-slate-200/50 blur-3xl" />
         </div>
 
         <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
-          <div>
+          <div className="fade-up">
             <div className="mb-5 inline-flex items-center rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-600 shadow-sm">
               Done-for-you AI automation for service businesses
             </div>
@@ -89,13 +84,13 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#contact"
-                className="rounded-full bg-[#0B1F3A] px-7 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-[#10284b]"
+                className="rounded-full bg-[#0B1F3A] px-7 py-3.5 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#10284b]"
               >
                 Book a Free Discovery Call
               </a>
               <a
                 href="#how-it-works"
-                className="rounded-full border border-slate-300 bg-white px-7 py-3.5 text-center text-sm font-semibold text-slate-900 transition hover:border-slate-900"
+                className="rounded-full border border-slate-300 bg-white px-7 py-3.5 text-center text-sm font-semibold text-slate-900 transition duration-300 hover:-translate-y-0.5 hover:border-slate-900"
               >
                 See How It Works
               </a>
@@ -108,7 +103,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative">
+          <div className="fade-up-delay relative">
             <div className="rounded-[2rem] border border-slate-200 bg-white/80 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur">
               <div className="mb-5 flex items-center justify-between">
                 <div>
@@ -125,7 +120,7 @@ export default function Home() {
               </div>
 
               <div className="space-y-4">
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5">
+                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
                     Incoming Enquiry
                   </p>
@@ -135,7 +130,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5">
+                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
                     Lead Logged
                   </p>
@@ -145,7 +140,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5">
+                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
                     Draft Reply Created
                   </p>
@@ -155,7 +150,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-5 shadow-sm">
+                <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
                     You stay in control
                   </p>
@@ -181,7 +176,7 @@ export default function Home() {
 
       {/* Problem */}
       <section className="border-t border-slate-200 bg-slate-50 px-6 py-20">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C8A24D]">
               The problem
@@ -206,7 +201,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
               >
                 <p className="text-base font-medium leading-7 text-slate-800">
                   {item}
@@ -219,7 +214,7 @@ export default function Home() {
 
       {/* Solution */}
       <section id="solution" className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C8A24D]">
               The solution
@@ -256,7 +251,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <h3 className="text-xl font-semibold text-[#0B1F3A]">
                   {item.title}
@@ -275,7 +270,7 @@ export default function Home() {
         id="how-it-works"
         className="border-t border-slate-200 bg-slate-50 px-6 py-20"
       >
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C8A24D]">
               How it works
@@ -294,7 +289,7 @@ export default function Home() {
             ].map((step) => (
               <div
                 key={step}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
               >
                 <p className="text-base font-semibold leading-7 text-[#0B1F3A]">
                   {step}
@@ -312,7 +307,7 @@ export default function Home() {
 
       {/* Who it's for */}
       <section className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C8A24D]">
               Who it’s for
@@ -331,7 +326,7 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-3xl border border-slate-200 bg-slate-50 p-7"
+                className="rounded-3xl border border-slate-200 bg-slate-50 p-7 transition duration-300 hover:-translate-y-1 hover:shadow-sm"
               >
                 <h3 className="text-lg font-semibold text-[#0B1F3A]">{item}</h3>
               </div>
@@ -346,8 +341,11 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="border-t border-slate-200 bg-slate-50 px-6 py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
+      <section
+        id="pricing"
+        className="border-t border-slate-200 bg-slate-50 px-6 py-20"
+      >
+        <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 fade-up">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#C8A24D]">
               Pricing
@@ -365,7 +363,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:shadow-lg">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">
               Typical setup fee
             </p>
@@ -399,7 +397,7 @@ export default function Home() {
 
             <a
               href="#contact"
-              className="mt-8 inline-block rounded-full bg-[#0B1F3A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#10284b]"
+              className="mt-8 inline-block rounded-full bg-[#0B1F3A] px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#10284b]"
             >
               Get Pricing
             </a>
@@ -409,7 +407,7 @@ export default function Home() {
 
       {/* CTA */}
       <section id="contact" className="px-6 py-20">
-        <div className="mx-auto max-w-5xl rounded-[2rem] bg-[#0B1F3A] px-8 py-14 text-white md:px-14">
+        <div className="mx-auto max-w-5xl rounded-[2rem] bg-[#0B1F3A] px-8 py-14 text-white md:px-14 fade-up">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D8BA74]">
             Get started
           </p>
@@ -423,14 +421,14 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="mailto:ruddventures@gmail.com"
-              className="rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#0B1F3A] transition hover:bg-slate-100"
+              href="mailto:info@ruddventures.co.uk"
+              className="rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-slate-100"
             >
               Contact Us
             </a>
             <a
-              href="tel:07917006216"
-              className="rounded-full border border-white/25 px-6 py-3 text-center text-sm font-semibold text-white transition hover:border-white"
+              href="tel:+447000000000"
+              className="rounded-full border border-white/25 px-6 py-3 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-white"
             >
               Call Now
             </a>
