@@ -9,20 +9,26 @@ export default function Home() {
   const services = [
     {
       title: "AI Enquiry Automation",
-      text: "Automatically capture enquiries, log leads, and draft professional replies for review so your business responds faster without losing control.",
+      text: "A practical system that captures enquiries, logs leads, and drafts professional replies for review so your business responds faster.",
+      href: "/ai-automation",
+      cta: "View AI Automation",
     },
     {
       title: "Website Design & Build",
-      text: "Clean, modern websites built for service businesses that want to look more professional online and generate more enquiries.",
+      text: "Clean, modern websites built for service businesses that want to look more professional and generate more enquiries.",
+      href: "/website-design",
+      cta: "View Website Design",
     },
     {
       title: "Complete Enquiry System",
-      text: "A combined setup that helps your business attract new leads and handle them properly from first contact through to response.",
+      text: "A combined setup that gives your business both a stronger online presence and a better system for handling incoming leads.",
+      href: "/complete-enquiry-system",
+      cta: "View Bundle",
     },
   ];
 
   const steps = [
-    "We understand your business, services, and enquiry process",
+    "We understand your business, services, and current enquiry process",
     "We build your website and/or install your enquiry system",
     "Enquiries are captured, tracked, and drafted for review",
     "You stay in control while your business responds faster",
@@ -49,16 +55,16 @@ export default function Home() {
 
   const examples = [
     {
-      title: "Website + enquiry system",
-      text: "A business gets a clean website that helps bring in leads, while the enquiry system logs each one and drafts replies automatically.",
+      title: "Website only",
+      text: "A local service business needs a cleaner, more professional website that gives customers a better first impression and a clearer route to enquire.",
     },
     {
       title: "Automation only",
-      text: "A new email comes in asking for a quote. The lead is captured immediately and a professional draft response is created for review.",
+      text: "A business already gets enquiries but needs a faster, more organised way to capture leads and draft replies without missing opportunities.",
     },
     {
-      title: "Local service business",
-      text: "A customer enquires about services, pricing, or availability. The business looks more responsive without adding more admin work.",
+      title: "Full bundle",
+      text: "A business wants both a stronger online presence and a better way to manage incoming leads from first contact onward.",
     },
   ];
 
@@ -67,7 +73,7 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071426]/70 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#" className="flex items-center gap-4">
+          <a href="/" className="flex items-center gap-4">
             <img
               src="/logo.png"
               alt="Rudd Ventures"
@@ -142,10 +148,10 @@ export default function Home() {
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#contact"
+                href="#services"
                 className="rounded-full bg-[#D8BA74] px-7 py-3.5 text-center text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
               >
-                Book a Free Discovery Call
+                Explore Services
               </a>
               <a
                 href="#how-it-works"
@@ -281,7 +287,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Services Overview */}
       <section id="services" className="px-6 py-20">
         <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
@@ -289,11 +295,12 @@ export default function Home() {
               Our services
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Two services designed to help businesses grow and respond better
+              Choose the right starting point for your business
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Rudd Ventures helps service businesses improve both sides of the
-              process: generating enquiries and handling them properly.
+              Whether you need a better website, a better enquiry process, or
+              both combined, Rudd Ventures gives you a practical setup built
+              around your business.
             </p>
           </div>
 
@@ -310,6 +317,12 @@ export default function Home() {
                 <p className="mt-3 text-sm leading-7 text-slate-300">
                   {item.text}
                 </p>
+                <a
+                  href={item.href}
+                  className="mt-6 inline-flex rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10"
+                >
+                  {item.cta}
+                </a>
               </div>
             ))}
           </div>
@@ -395,11 +408,11 @@ export default function Home() {
               What this looks like
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Practical examples for real businesses
+              Flexible options depending on what your business needs
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              The goal is simple: help businesses win more enquiries and handle
-              them better.
+              Some businesses need a better website. Some need a better response
+              system. Some need both.
             </p>
           </div>
 
@@ -424,7 +437,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Pricing Snapshot */}
       <section id="pricing" className="border-t border-white/10 px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 fade-up">
           <div>
@@ -439,14 +452,14 @@ export default function Home() {
               a complete combined setup.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              Everything is built around your business, with optional ongoing
-              support if you want updates and improvements later.
+              Each service has its own page with more detail on what is included
+              and how it can work for your business.
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-sm backdrop-blur transition duration-300 hover:shadow-xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
-              Service options
+              Starting points
             </p>
 
             <div className="mt-5 space-y-4 text-white">
@@ -468,37 +481,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-8 space-y-4">
-              <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">
-                  Optional monthly support
-                </p>
-                <p className="mt-1 text-sm text-slate-300">
-                  Available for maintenance, updates, and ongoing improvements.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">
-                  Practical ongoing costs
-                </p>
-                <p className="mt-1 text-sm text-slate-300">
-                  Clients usually cover any platform costs separately where needed.
-                </p>
-              </div>
-            </div>
-
             <a
-              href="#contact"
+              href="#services"
               className="mt-8 inline-block rounded-full bg-[#D8BA74] px-6 py-3 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
             >
-              Get Pricing
+              Explore Services
             </a>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Contact CTA */}
       <section id="contact" className="px-6 py-20">
         <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-white/10 px-8 py-14 text-white shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl md:px-14 fade-up">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
@@ -507,12 +500,12 @@ export default function Home() {
                 Get started
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Want more enquiries and faster replies?
+                Want a better way to generate and handle enquiries?
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
                 Book a quick conversation and we’ll show you the best starting
                 point for your business, whether that is a website, an enquiry
-                system, or both combined.
+                system, or a complete bundled setup.
               </p>
             </div>
 
@@ -520,17 +513,17 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Done-for-you setup
+                    AI enquiry automation
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Built around your business
+                    Website design & build
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Website + enquiry support available
+                    Complete enquiry system bundle
                   </p>
                 </div>
               </div>
