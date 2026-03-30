@@ -97,3 +97,117 @@ body {
     transform: translateY(-10px);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #071426;
+  color: white;
+}
+
+.bg-animated {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(216, 186, 116, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 80% 80%, rgba(216, 186, 116, 0.08), transparent 26%),
+    linear-gradient(135deg, #071426 0%, #0b1f3a 40%, #071426 100%);
+  background-size: 140% 140%;
+  animation: backgroundShift 16s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease forwards;
+}
+
+.fade-up-delay {
+  opacity: 0;
+  animation: fadeUp 1s ease 0.2s forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.floating-panel {
+  animation: floatingPanel 6s ease-in-out infinite;
+}
+
+@keyframes floatingPanel {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Slightly better text rendering */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Optional polish for section transitions */
+section {
+  position: relative;
+}
+
+/* Better card glow on hover without changing layout */
+.floating-panel,
+.rounded-3xl,
+.rounded-\[2rem\],
+.rounded-2xl {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* Keep things calm on small screens */
+@media (max-width: 768px) {
+  .floating-panel {
+    animation: none;
+  }
+
+  .fade-up,
+  .fade-up-delay {
+    opacity: 1;
+    animation: none;
+  }
+
+  .bg-animated {
+    animation-duration: 24s;
+  }
+}

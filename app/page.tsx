@@ -3,35 +3,35 @@ export default function Home() {
     "New enquiries sit too long in the inbox",
     "Good leads get missed or forgotten",
     "Replying takes time you do not have",
-    "Responses can be rushed or inconsistent",
+    "A weak website can cost you leads before they even contact you",
   ];
 
-  const benefits = [
+  const services = [
     {
-      title: "Faster Replies",
-      text: "Help customers hear back sooner without having to write every message from scratch.",
+      title: "AI Enquiry Automation",
+      text: "Automatically capture enquiries, log leads, and draft professional replies for review so your business responds faster without losing control.",
     },
     {
-      title: "No Missed Leads",
-      text: "Each enquiry is captured and logged so opportunities do not slip through the cracks.",
+      title: "Website Design & Build",
+      text: "Clean, modern websites built for service businesses that want to look more professional online and generate more enquiries.",
     },
     {
-      title: "Full Human Control",
-      text: "You approve everything before it is sent, so control stays with your business.",
+      title: "Complete Enquiry System",
+      text: "A combined setup that helps your business attract new leads and handle them properly from first contact through to response.",
     },
   ];
 
   const steps = [
-    "We connect your enquiry source",
-    "AI reviews and understands the message",
-    "The lead is logged and a draft reply is created",
-    "You review, approve, and send",
+    "We understand your business, services, and enquiry process",
+    "We build your website and/or install your enquiry system",
+    "Enquiries are captured, tracked, and drafted for review",
+    "You stay in control while your business responds faster",
   ];
 
   const industries = [
     {
       title: "Trades Businesses",
-      text: "Plumbers, electricians, builders, roofers, heating engineers and more.",
+      text: "Plumbers, electricians, builders, roofers, heating engineers and similar local trades.",
     },
     {
       title: "Cleaning Companies",
@@ -39,26 +39,26 @@ export default function Home() {
     },
     {
       title: "Barbers & Hairdressers",
-      text: "Service businesses managing appointment, pricing, and availability questions.",
+      text: "Service businesses managing bookings, pricing questions, and day-to-day customer enquiries.",
     },
     {
       title: "Pet Services",
-      text: "Dog trainers, groomers, walkers, and related local service businesses.",
+      text: "Dog trainers, groomers, walkers, behaviourists, and related local service businesses.",
     },
   ];
 
   const examples = [
     {
-      title: "Plumbing business",
-      text: "A customer asks about availability for a repair. The system logs the lead and prepares a professional draft response for review.",
+      title: "Website + enquiry system",
+      text: "A business gets a clean website that helps bring in leads, while the enquiry system logs each one and drafts replies automatically.",
     },
     {
-      title: "Cleaning company",
-      text: "A new enquiry comes in asking about domestic cleaning. The lead is captured immediately so it is not missed during the day.",
+      title: "Automation only",
+      text: "A new email comes in asking for a quote. The lead is captured immediately and a professional draft response is created for review.",
     },
     {
-      title: "Dog groomer",
-      text: "A customer asks about appointments and services. A clear reply is drafted without making up pricing or promises.",
+      title: "Local service business",
+      text: "A customer enquires about services, pricing, or availability. The business looks more responsive without adding more admin work.",
     },
   ];
 
@@ -77,18 +77,15 @@ export default function Home() {
               <span className="block text-lg font-semibold tracking-tight text-white">
                 Rudd Ventures
               </span>
-              <span className="block pt-1 text-xs uppercase tracking-[0.22em] text-[#D8BA74]">
-                AI Automation
-              </span>
             </div>
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
             <a
-              href="#solution"
+              href="#services"
               className="text-sm font-medium text-slate-300 transition hover:text-white"
             >
-              Solution
+              Services
             </a>
             <a
               href="#how-it-works"
@@ -130,18 +127,17 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
           <div className="fade-up">
             <div className="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm backdrop-blur">
-              Done-for-you AI automation for service businesses
+              Websites & smart enquiry systems for service businesses
             </div>
 
             <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-7xl">
-              Never Miss Another Enquiry Without Hiring Staff
+              Get More Enquiries and Respond Faster Without Hiring Staff
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-              Rudd Ventures installs a practical AI-powered enquiry system that
-              detects new emails, logs leads, and drafts professional replies
-              for review — helping you respond faster while staying fully in
-              control.
+              Rudd Ventures helps service businesses grow with clean websites
+              and practical enquiry systems that capture leads, log them
+              properly, and draft professional replies for review.
             </p>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -160,22 +156,25 @@ export default function Home() {
             </div>
 
             <div className="mt-7 flex flex-wrap gap-3">
-              {["Human approved", "No auto-send", "No false promises"].map(
-                (item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 shadow-sm backdrop-blur"
-                  >
-                    {item}
-                  </span>
-                )
-              )}
+              {[
+                "Human approved",
+                "No auto-send",
+                "No false promises",
+                "Built for service businesses",
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 shadow-sm backdrop-blur"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
 
             <p className="mt-6 max-w-xl text-sm leading-7 text-slate-400">
               Built for trades, cleaning companies, barbers, hairdressers, pet
-              services, and other local businesses that still handle enquiries
-              manually.
+              services, and other local businesses that want better systems and
+              a stronger online presence.
             </p>
           </div>
 
@@ -184,45 +183,45 @@ export default function Home() {
               <div className="mb-5 flex items-center justify-between">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#D8BA74]">
-                    Enquiry Workflow
+                    Rudd Ventures
                   </p>
                   <h2 className="mt-2 text-2xl font-semibold text-white">
-                    Built to move faster
+                    Website + enquiry system
                   </h2>
                 </div>
                 <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-200">
-                  Human approved
+                  Done for you
                 </div>
               </div>
 
               <div className="space-y-4">
                 <div className="rounded-2xl border border-white/10 bg-white/90 p-5 text-slate-900 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
-                    Incoming Enquiry
+                    Website generates enquiries
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    A customer email arrives asking about availability, next
-                    steps, or service information.
+                    A clean, modern website helps customers understand your
+                    services and take the next step.
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-white/90 p-5 text-slate-900 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
-                    Lead Logged
+                    Lead captured automatically
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    The system captures the enquiry details so nothing gets
+                    The system records the enquiry details so nothing gets
                     missed or forgotten.
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-white/90 p-5 text-slate-900 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
                   <p className="text-sm font-semibold text-[#0B1F3A]">
-                    Draft Reply Created
+                    Draft reply created
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600">
-                    A professional reply is prepared for you to review before
-                    sending.
+                    A professional reply is prepared for review so your business
+                    can respond faster.
                   </p>
                 </div>
 
@@ -231,19 +230,19 @@ export default function Home() {
                     You stay in control
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-700">
-                    Nothing is auto-sent. No invented pricing. No false
-                    promises. Just a faster, more reliable response process.
+                    No auto-send. No invented pricing. No false promises. Just
+                    a stronger process for handling enquiries properly.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-white/10 bg-white/10 px-5 py-4 shadow-lg backdrop-blur md:block">
+            <div className="absolute -bottom-20 left-0 hidden rounded-2xl border border-white/10 bg-white/10 px-5 py-4 shadow-lg backdrop-blur md:block">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-300">
                 Outcome
               </p>
               <p className="mt-2 text-lg font-semibold text-white">
-                Faster replies. Fewer missed leads.
+                More enquiries. Faster replies.
               </p>
             </div>
           </div>
@@ -258,13 +257,12 @@ export default function Home() {
               The problem
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Slow replies quietly cost small businesses real opportunities
+              Good businesses still lose leads through weak systems
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Most business owners are busy doing the actual work, not sitting
-              behind a screen answering every enquiry the moment it comes in.
-              That leads to missed messages, delayed replies, and customers
-              going elsewhere.
+              Some businesses do not have a strong website, and many still
+              handle enquiries manually. That means missed messages, slow
+              replies, and potential customers going elsewhere.
             </p>
           </div>
 
@@ -283,30 +281,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solution */}
-      <section id="solution" className="px-6 py-20">
+      {/* Services */}
+      <section id="services" className="px-6 py-20">
         <div className="mx-auto max-w-7xl fade-up">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D8BA74]">
-              The solution
+              Our services
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              A simple enquiry response system built around your business
+              Two services designed to help businesses grow and respond better
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Rudd Ventures sets up a done-for-you system that detects incoming
-              customer emails, analyses the enquiry, logs the lead, and drafts a
-              professional reply for your team to review.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-300">
-              This is not generic software you have to figure out yourself. It
-              is a practical setup service built around your workflow, your
-              services, and the way you already operate.
+              Rudd Ventures helps service businesses improve both sides of the
+              process: generating enquiries and handling them properly.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {benefits.map((item) => (
+            {services.map((item) => (
               <div
                 key={item.title}
                 className="rounded-3xl border border-white/10 bg-white/10 p-7 shadow-sm backdrop-blur transition duration-300 hover:-translate-y-1 hover:bg-white/15 hover:shadow-xl"
@@ -335,7 +327,7 @@ export default function Home() {
               How it works
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              A straightforward process with no loss of control
+              A straightforward process built around your business
             </h2>
           </div>
 
@@ -370,7 +362,7 @@ export default function Home() {
               Who it’s for
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Designed for service businesses that want faster enquiry handling
+              Built for local service businesses
             </h2>
           </div>
 
@@ -406,8 +398,8 @@ export default function Home() {
               Practical examples for real businesses
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              The system is designed to support the way service businesses
-              already work — not complicate it.
+              The goal is simple: help businesses win more enquiries and handle
+              them better.
             </p>
           </div>
 
@@ -433,39 +425,48 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section
-        id="pricing"
-        className="border-t border-white/10 px-6 py-20"
-      >
+      <section id="pricing" className="border-t border-white/10 px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 fade-up">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D8BA74]">
               Pricing
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-              Simple setup. Practical return.
+              Flexible service options for different business needs
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Pricing depends on the complexity of your workflow and what your
-              business needs.
+              Pricing depends on whether you need website design, automation, or
+              a complete combined setup.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              The service is offered as a one-time setup, with optional ongoing
-              support if you want future updates and changes.
+              Everything is built around your business, with optional ongoing
+              support if you want updates and improvements later.
             </p>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-sm backdrop-blur transition duration-300 hover:shadow-xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
-              Typical setup fee
+              Service options
             </p>
-            <p className="mt-3 text-5xl font-semibold tracking-tight text-white">
-              £250–£500
-            </p>
-            <p className="mt-4 text-sm leading-7 text-slate-300">
-              Final pricing depends on complexity, integrations, and any custom
-              setup requirements.
-            </p>
+
+            <div className="mt-5 space-y-4 text-white">
+              <div className="rounded-2xl bg-white/10 p-4">
+                <p className="font-semibold text-white">AI Automation</p>
+                <p className="mt-1 text-sm text-slate-300">From £250–£500</p>
+              </div>
+
+              <div className="rounded-2xl bg-white/10 p-4">
+                <p className="font-semibold text-white">Website Design & Build</p>
+                <p className="mt-1 text-sm text-slate-300">From £300–£800</p>
+              </div>
+
+              <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
+                <p className="font-semibold text-[#0B1F3A]">
+                  Complete Enquiry System
+                </p>
+                <p className="mt-1 text-sm text-slate-700">From £500–£1,000+</p>
+              </div>
+            </div>
 
             <div className="mt-8 space-y-4">
               <div className="rounded-2xl bg-white/10 p-4">
@@ -473,26 +474,16 @@ export default function Home() {
                   Optional monthly support
                 </p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Available for maintenance, updates, and further improvements.
+                  Available for maintenance, updates, and ongoing improvements.
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white/10 p-4">
                 <p className="font-semibold text-white">
-                  Low ongoing platform costs
+                  Practical ongoing costs
                 </p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Clients usually cover Zapier and minimal AI usage separately.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
-                <p className="font-semibold text-[#0B1F3A]">
-                  No bloated software fees
-                </p>
-                <p className="mt-1 text-sm text-slate-700">
-                  Just a practical system designed to save time and improve
-                  response speed.
+                  Clients usually cover any platform costs separately where needed.
                 </p>
               </div>
             </div>
@@ -516,12 +507,12 @@ export default function Home() {
                 Get started
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Want to stop missing enquiries?
+                Want more enquiries and faster replies?
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Book a quick conversation and we’ll show you how this could work
-                in your business, with no pressure and no overcomplicated tech
-                talk.
+                Book a quick conversation and we’ll show you the best starting
+                point for your business, whether that is a website, an enquiry
+                system, or both combined.
               </p>
             </div>
 
@@ -534,12 +525,12 @@ export default function Home() {
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Built around your workflow
+                    Built around your business
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-4">
                   <p className="text-sm font-semibold text-white">
-                    Human approval stays in place
+                    Website + enquiry support available
                   </p>
                 </div>
               </div>
@@ -567,7 +558,7 @@ export default function Home() {
       <footer className="border-t border-white/10 px-6 py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
           <p>© 2026 Rudd Ventures. All rights reserved.</p>
-          <p>AI-powered automation setup for small businesses.</p>
+          <p>Websites and smart enquiry systems for service businesses.</p>
         </div>
       </footer>
     </main>
