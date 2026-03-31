@@ -72,7 +72,10 @@ export default function CompleteEnquirySystemPage() {
             </a>
 
             <div className="group relative flex items-center">
-              <button className="text-sm font-medium text-white transition">
+              <button
+                type="button"
+                className="text-sm font-medium text-white transition"
+              >
                 Services
               </button>
 
@@ -365,9 +368,13 @@ export default function CompleteEnquirySystemPage() {
               Stronger value through a complete bundled setup
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Most complete enquiry system projects start from £500 and
-              typically range up to £1,000+ depending on the website scope and
-              automation requirements.
+              Pricing is kept simple, but every bundled setup is slightly
+              different depending on the website scope, automation requirements,
+              and how tailored the full system needs to be.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-300">
+              We’ll confirm the exact scope and pricing during a short
+              consultation once we understand what your business needs.
             </p>
           </div>
 
@@ -376,7 +383,7 @@ export default function CompleteEnquirySystemPage() {
               Complete Enquiry System
             </p>
             <p className="mt-3 text-5xl font-semibold tracking-tight text-white">
-              £500–£1,000+
+              From £500
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
               Final pricing depends on the website build, the automation logic,
@@ -385,23 +392,31 @@ export default function CompleteEnquirySystemPage() {
 
             <div className="mt-8 space-y-4">
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">Best combined value</p>
+                <p className="font-semibold text-white">What this can include</p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Ideal for businesses wanting a stronger full system rather
-                  than separate solutions.
+                  Standard bundled setups start from £500, while more advanced
+                  websites, deeper automation, and more tailored structure
+                  increase based on scope.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
                 <p className="font-semibold text-[#0B1F3A]">
-                  Website + automation working together
+                  Exact pricing confirmed in consultation
                 </p>
                 <p className="mt-1 text-sm text-slate-700">
-                  Designed so your business not only gets more enquiries but
-                  handles them more effectively too.
+                  We’ll recommend the simplest and most effective combined setup
+                  for your business before confirming the final quote.
                 </p>
               </div>
             </div>
+
+            <a
+              href="#contact"
+              className="mt-8 inline-block rounded-full bg-[#D8BA74] px-6 py-3 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
+            >
+              Book a Consultation
+            </a>
           </div>
         </div>
       </section>
