@@ -614,12 +614,14 @@ export default function Home() {
               Flexible service options for different business needs
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Pricing depends on whether you need website design, automation, or
-              a complete combined setup.
+              We keep pricing straightforward, but every setup is slightly
+              different depending on your business, workflow, and what level of
+              support you need.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              Each service has its own page with more detail on what is included
-              and how it can work for your business.
+              We’ll recommend the simplest and most effective setup for your
+              business, then confirm exact scope and pricing during a short
+              consultation.
             </p>
           </div>
 
@@ -631,27 +633,44 @@ export default function Home() {
             <div className="mt-5 space-y-4 text-white">
               <div className="rounded-2xl bg-white/10 p-4">
                 <p className="font-semibold text-white">AI Automation</p>
-                <p className="mt-1 text-sm text-slate-300">From £250–£500</p>
+                <p className="mt-1 text-sm text-slate-300">From £250</p>
+                <p className="mt-2 text-sm leading-7 text-slate-400">
+                  Final pricing depends on enquiry volume, workflow complexity,
+                  and how tailored the automation needs to be.
+                </p>
               </div>
 
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">Website Design & Build</p>
-                <p className="mt-1 text-sm text-slate-300">From £300–£800</p>
+                <p className="font-semibold text-white">Website Design &amp; Build</p>
+                <p className="mt-1 text-sm text-slate-300">From £300</p>
+                <p className="mt-2 text-sm leading-7 text-slate-400">
+                  Pricing depends on the size of the website, number of sections,
+                  and how tailored the build needs to be.
+                </p>
               </div>
 
               <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
                 <p className="font-semibold text-[#0B1F3A]">
                   Complete Enquiry System
                 </p>
-                <p className="mt-1 text-sm text-slate-700">From £500–£1,000+</p>
+                <p className="mt-1 text-sm text-slate-700">From £500</p>
+                <p className="mt-2 text-sm leading-7 text-slate-700">
+                  This combines a professional website with enquiry automation,
+                  with final pricing confirmed during consultation based on scope.
+                </p>
               </div>
             </div>
 
+            <p className="mt-6 text-sm leading-7 text-slate-300">
+              Not sure what you need? We’ll recommend the simplest and most
+              effective setup for your business.
+            </p>
+
             <a
-              href="#services"
+              href="#contact"
               className="mt-8 inline-block rounded-full bg-[#D8BA74] px-6 py-3 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
             >
-              Explore Services
+              Book a Consultation
             </a>
           </div>
         </div>

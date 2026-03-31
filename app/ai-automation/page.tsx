@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function AIAutomationPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const features = [
     "Incoming enquiry emails detected automatically",
     "Lead details logged into a simple tracker",
@@ -47,7 +53,7 @@ export default function AIAutomationPage() {
   return (
     <main className="relative overflow-hidden bg-animated text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071426]/70 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 relative">
           <a href="/" className="flex items-center gap-4">
             <img
               src="/logo.png"
@@ -70,7 +76,10 @@ export default function AIAutomationPage() {
             </a>
 
             <div className="group relative flex items-center">
-              <button className="text-sm font-medium text-white transition">
+              <button
+                type="button"
+                className="text-sm font-medium text-white transition"
+              >
                 Services
               </button>
 
@@ -136,13 +145,131 @@ export default function AIAutomationPage() {
             </a>
           </nav>
 
-          <a
-            href="#contact"
-            className="rounded-full bg-[#D8BA74] px-5 py-2.5 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
-          >
-            Book a Call
-          </a>
+          <div className="absolute left-1/2 -translate-x-1/2 md:hidden">
+            <a
+              href="#contact"
+              className="rounded-full bg-[#D8BA74] px-4 py-2 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:bg-[#e3c989]"
+            >
+              Book
+            </a>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="#contact"
+              className="hidden rounded-full bg-[#D8BA74] px-5 py-2.5 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989] md:inline-block"
+            >
+              Book a Call
+            </a>
+
+            <button
+              type="button"
+              aria-label="Open menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white backdrop-blur transition hover:bg-white/10 md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                {menuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {menuOpen && (
+          <div className="border-t border-white/10 bg-[#071426]/95 px-6 py-5 backdrop-blur md:hidden">
+            <nav className="flex flex-col gap-2">
+              <a
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                Home
+              </a>
+
+              <div className="rounded-xl border border-white/10 bg-white/5 p-2">
+                <p className="px-2 pb-2 pt-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                  Services
+                </p>
+
+                <a
+                  href="/ai-automation"
+                  onClick={() => setMenuOpen(false)}
+                  className="block rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                >
+                  AI Automation
+                </a>
+
+                <a
+                  href="/website-design"
+                  onClick={() => setMenuOpen(false)}
+                  className="mt-1 block rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                >
+                  Website Design &amp; Build
+                </a>
+
+                <a
+                  href="/complete-enquiry-system"
+                  onClick={() => setMenuOpen(false)}
+                  className="mt-1 block rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                >
+                  Complete Enquiry System
+                </a>
+              </div>
+
+              <a
+                href="/faq"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                FAQ
+              </a>
+
+              <a
+                href="#pricing"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                Pricing
+              </a>
+
+              <a
+                href="#contact"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                Contact
+              </a>
+
+              <a
+                href="#contact"
+                onClick={() => setMenuOpen(false)}
+                className="mt-2 rounded-full bg-[#D8BA74] px-5 py-3 text-center text-sm font-semibold text-[#0B1F3A] transition hover:bg-[#e3c989]"
+              >
+                Book a Call
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section className="relative px-6 py-20 md:py-28">
@@ -361,9 +488,13 @@ export default function AIAutomationPage() {
               Clear starting point for automation setup
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Most AI enquiry automation setups start from £250 and typically
-              range up to £500 depending on workflow complexity and how tailored
-              the setup needs to be.
+              Pricing is kept simple, but every setup is slightly different
+              depending on your enquiry volume, workflow, and how tailored the
+              automation needs to be.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-300">
+              We’ll confirm the exact scope and pricing during a short
+              consultation once we understand what your business needs.
             </p>
           </div>
 
@@ -372,7 +503,7 @@ export default function AIAutomationPage() {
               AI Automation
             </p>
             <p className="mt-3 text-5xl font-semibold tracking-tight text-white">
-              £250–£500
+              From £250
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
               Final pricing depends on complexity, custom rules, and how your
@@ -381,22 +512,31 @@ export default function AIAutomationPage() {
 
             <div className="mt-8 space-y-4">
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">Optional support</p>
+                <p className="font-semibold text-white">What this can include</p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Ongoing help available for updates and improvements.
+                  Simple setups may include basic lead logging and draft reply
+                  creation, while more tailored workflows and integrations
+                  increase based on scope.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
                 <p className="font-semibold text-[#0B1F3A]">
-                  No bloated software setup
+                  Exact pricing confirmed in consultation
                 </p>
                 <p className="mt-1 text-sm text-slate-700">
-                  Just a practical system built to save time and improve
-                  response speed.
+                  We’ll recommend the simplest and most effective setup for your
+                  business before confirming the final quote.
                 </p>
               </div>
             </div>
+
+            <a
+              href="#contact"
+              className="mt-8 inline-block rounded-full bg-[#D8BA74] px-6 py-3 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
+            >
+              Book a Consultation
+            </a>
           </div>
         </div>
       </section>

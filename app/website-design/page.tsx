@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function WebsiteDesignPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const features = [
     "Clean, professional design built for service businesses",
     "Mobile-friendly layout that works properly on phones",
@@ -47,7 +53,7 @@ export default function WebsiteDesignPage() {
   return (
     <main className="relative overflow-hidden bg-animated text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#071426]/70 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 relative">
           <a href="/" className="flex items-center gap-4">
             <img
               src="/logo.png"
@@ -70,7 +76,10 @@ export default function WebsiteDesignPage() {
             </a>
 
             <div className="group relative flex items-center">
-              <button className="text-sm font-medium text-white transition">
+              <button
+                type="button"
+                className="text-sm font-medium text-white transition"
+              >
                 Services
               </button>
 
@@ -136,13 +145,131 @@ export default function WebsiteDesignPage() {
             </a>
           </nav>
 
-          <a
-            href="#contact"
-            className="rounded-full bg-[#D8BA74] px-5 py-2.5 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
-          >
-            Book a Call
-          </a>
+          <div className="absolute left-1/2 -translate-x-1/2 md:hidden">
+            <a
+              href="#contact"
+              className="rounded-full bg-[#D8BA74] px-4 py-2 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:bg-[#e3c989]"
+            >
+              Book
+            </a>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="#contact"
+              className="hidden rounded-full bg-[#D8BA74] px-5 py-2.5 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989] md:inline-block"
+            >
+              Book a Call
+            </a>
+
+            <button
+              type="button"
+              aria-label="Open menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white backdrop-blur transition hover:bg-white/10 md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                {menuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {menuOpen && (
+          <div className="border-t border-white/10 bg-[#071426]/95 px-6 py-5 backdrop-blur md:hidden">
+            <nav className="flex flex-col gap-2">
+              <a
+                href="/"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+              >
+                Home
+              </a>
+
+              <div className="rounded-xl border border-white/10 bg-white/5 p-2">
+                <p className="px-2 pb-2 pt-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+                  Services
+                </p>
+
+                <a
+                  href="/ai-automation"
+                  onClick={() => setMenuOpen(false)}
+                  className="block rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                >
+                  AI Automation
+                </a>
+
+                <a
+                  href="/website-design"
+                  onClick={() => setMenuOpen(false)}
+                  className="mt-1 block rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                >
+                  Website Design &amp; Build
+                </a>
+
+                <a
+                  href="/complete-enquiry-system"
+                  onClick={() => setMenuOpen(false)}
+                  className="mt-1 block rounded-lg px-3 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                >
+                  Complete Enquiry System
+                </a>
+              </div>
+
+              <a
+                href="/faq"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                FAQ
+              </a>
+
+              <a
+                href="#pricing"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                Pricing
+              </a>
+
+              <a
+                href="#contact"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                Contact
+              </a>
+
+              <a
+                href="#contact"
+                onClick={() => setMenuOpen(false)}
+                className="mt-2 rounded-full bg-[#D8BA74] px-5 py-3 text-center text-sm font-semibold text-[#0B1F3A] transition hover:bg-[#e3c989]"
+              >
+                Book a Call
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       <section className="relative px-6 py-20 md:py-28">
