@@ -489,9 +489,13 @@ export default function WebsiteDesignPage() {
               Clear starting point for website design and build
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-300">
-              Most website projects start from £300 and typically range up to
-              £800 depending on the number of sections, level of content, and
-              how tailored the build needs to be.
+              Pricing is kept simple, but each website is slightly different
+              depending on the number of sections, overall structure, and how
+              tailored the build needs to be.
+            </p>
+            <p className="mt-4 text-lg leading-8 text-slate-300">
+              We’ll confirm the exact scope and pricing during a short
+              consultation once we understand what your business needs.
             </p>
           </div>
 
@@ -500,7 +504,7 @@ export default function WebsiteDesignPage() {
               Website Design &amp; Build
             </p>
             <p className="mt-3 text-5xl font-semibold tracking-tight text-white">
-              £300–£800
+              From £300
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
               Final pricing depends on structure, content, and how tailored the
@@ -509,22 +513,31 @@ export default function WebsiteDesignPage() {
 
             <div className="mt-8 space-y-4">
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">Clean, practical build</p>
+                <p className="font-semibold text-white">What this can include</p>
                 <p className="mt-1 text-sm text-slate-300">
-                  Focused on clarity, professionalism, and generating enquiries.
+                  Smaller, simpler websites start from £300, while larger or
+                  more tailored builds increase depending on content, layout,
+                  and scope.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-[#D8BA74] bg-[#F8F2E6] p-4">
                 <p className="font-semibold text-[#0B1F3A]">
-                  Easy to combine with automation later
+                  Exact pricing confirmed in consultation
                 </p>
                 <p className="mt-1 text-sm text-slate-700">
-                  This can stay as a standalone website or become part of a
-                  larger enquiry system later on.
+                  We’ll recommend the simplest and most effective website setup
+                  for your business before confirming the final quote.
                 </p>
               </div>
             </div>
+
+            <a
+              href="#contact"
+              className="mt-8 inline-block rounded-full bg-[#D8BA74] px-6 py-3 text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e3c989]"
+            >
+              Book a Consultation
+            </a>
           </div>
         </div>
       </section>
