@@ -1,3 +1,5 @@
+import ContactForm from "@/components/contact-form";
+
 export default function Home() {
   const problems = [
     "New enquiries sit too long in the inbox",
@@ -528,60 +530,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="px-6 py-20">
-        <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-white/10 px-8 py-14 text-white shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl md:px-14 fade-up">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#D8BA74]">
-                Get started
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Want a better way to generate and handle enquiries?
-              </h2>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                Book a quick conversation and we’ll show you the best starting
-                point for your business, whether that is a website, an enquiry
-                system, or a complete bundled setup.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-white/10 bg-[#071426]/50 p-6">
-              <div className="space-y-4">
-                <div className="rounded-2xl bg-white/10 p-4">
-                  <p className="text-sm font-semibold text-white">
-                    AI enquiry automation
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-white/10 p-4">
-                  <p className="text-sm font-semibold text-white">
-                    Website design & build
-                  </p>
-                </div>
-                <div className="rounded-2xl bg-white/10 p-4">
-                  <p className="text-sm font-semibold text-white">
-                    Complete enquiry system bundle
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="mailto:ruddventures@gmail.com"
-                  className="rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#0B1F3A] transition duration-300 hover:-translate-y-0.5 hover:bg-slate-100"
-                >
-                  Email Us
-                </a>
-                <a
-                  href="tel:07917006216"
-                  className="rounded-full border border-white/25 px-6 py-3 text-center text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:border-white"
-                >
-                  Call 07917 006216
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactForm
+        eyebrow="Get started"
+        title="Want a better way to generate and handle enquiries?"
+        description="Send over your details and a short message and we’ll come back to you with the best starting point for your business."
+        highlights={[
+          "AI enquiry automation",
+          "Website design & build",
+          "Complete enquiry system bundle",
+        ]}
+      />
 
       <footer className="border-t border-white/10 px-6 py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
