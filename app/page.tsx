@@ -302,10 +302,6 @@ export default function Home() {
       <section className="relative px-6 py-20 md:py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
           <div className="fade-up">
-            <div className="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm backdrop-blur">
-              Websites & smart enquiry systems for service businesses
-            </div>
-
             <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-7xl">
               Get More Enquiries and Respond Faster Without Hiring Staff
             </h1>
@@ -315,6 +311,12 @@ export default function Home() {
               and practical enquiry systems that capture leads, log them
               properly, and draft professional replies for review.
             </p>
+
+            <div className="mt-6">
+              <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-200 shadow-sm backdrop-blur">
+                Websites & smart enquiry systems for service businesses
+              </div>
+            </div>
 
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <a
@@ -633,9 +635,7 @@ export default function Home() {
               </div>
 
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">
-                  Website Design & Build
-                </p>
+                <p className="font-semibold text-white">Website Design & Build</p>
                 <p className="mt-1 text-sm text-slate-300">From £300–£800</p>
               </div>
 
