@@ -641,7 +641,9 @@ export default function Home() {
               </div>
 
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="font-semibold text-white">Website Design &amp; Build</p>
+                <p className="font-semibold text-white">
+                  Website Design &amp; Build
+                </p>
                 <p className="mt-1 text-sm text-slate-300">From £300</p>
                 <p className="mt-2 text-sm leading-7 text-slate-400">
                   Pricing depends on the size of the website, number of sections,
@@ -688,9 +690,34 @@ export default function Home() {
       />
 
       <footer className="border-t border-white/10 px-6 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Rudd Ventures. All rights reserved.</p>
-          <p>Websites and smart enquiry systems for service businesses.</p>
+        <div className="mx-auto flex max-w-7xl flex-col gap-6 text-sm text-slate-400 md:flex-row md:items-start md:justify-between">
+          <div>
+            <p>© 2026 Rudd Ventures. All rights reserved.</p>
+            <p className="mt-2">
+              Websites and smart enquiry systems for service businesses.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3 md:items-end">
+            <a
+              href="/terms-and-conditions"
+              className="transition hover:text-white"
+            >
+              Terms &amp; Conditions
+            </a>
+            <a
+              href="/privacy-policy"
+              className="transition hover:text-white"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/legal-disclaimer"
+              className="transition hover:text-white"
+            >
+              Legal Disclaimer
+            </a>
+          </div>
         </div>
       </footer>
     </main>
